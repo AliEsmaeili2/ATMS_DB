@@ -9,23 +9,29 @@
 /* Begin PBXBuildFile section */
 		1304C62E2AF8D44100043C80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1304C62D2AF8D44100043C80 /* AppDelegate.swift */; };
 		1304C6302AF8D44100043C80 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1304C62F2AF8D44100043C80 /* SceneDelegate.swift */; };
-		1304C6322AF8D44100043C80 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1304C6312AF8D44100043C80 /* ViewController.swift */; };
+		1304C6322AF8D44100043C80 /* HomeVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1304C6312AF8D44100043C80 /* HomeVc.swift */; };
 		1304C6352AF8D44100043C80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1304C6332AF8D44100043C80 /* Main.storyboard */; };
 		1304C6382AF8D44100043C80 /* ATMS_DB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1304C6362AF8D44100043C80 /* ATMS_DB.xcdatamodeld */; };
 		1304C63A2AF8D44300043C80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1304C6392AF8D44300043C80 /* Assets.xcassets */; };
 		1304C63D2AF8D44300043C80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1304C63B2AF8D44300043C80 /* LaunchScreen.storyboard */; };
+		1304C6482AF8FE9200043C80 /* personalInfoVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1304C6472AF8FE9200043C80 /* personalInfoVc.swift */; };
+		A1606AF51E87E31F78C3F6BB /* Pods_ATMS_DB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19E0D3C1CD5330C801674065 /* Pods_ATMS_DB.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1304C62A2AF8D44100043C80 /* ATMS_DB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ATMS_DB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1304C62D2AF8D44100043C80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1304C62F2AF8D44100043C80 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1304C6312AF8D44100043C80 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1304C6312AF8D44100043C80 /* HomeVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVc.swift; sourceTree = "<group>"; };
 		1304C6342AF8D44100043C80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1304C6372AF8D44100043C80 /* ATMS_DB.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ATMS_DB.xcdatamodel; sourceTree = "<group>"; };
 		1304C6392AF8D44300043C80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1304C63C2AF8D44300043C80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1304C63E2AF8D44300043C80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1304C6472AF8FE9200043C80 /* personalInfoVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = personalInfoVc.swift; sourceTree = "<group>"; };
+		19E0D3C1CD5330C801674065 /* Pods_ATMS_DB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ATMS_DB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2F2016AF4771B181D630C12 /* Pods-ATMS_DB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ATMS_DB.release.xcconfig"; path = "Target Support Files/Pods-ATMS_DB/Pods-ATMS_DB.release.xcconfig"; sourceTree = "<group>"; };
+		F4A8B83EC734566D835D04F4 /* Pods-ATMS_DB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ATMS_DB.debug.xcconfig"; path = "Target Support Files/Pods-ATMS_DB/Pods-ATMS_DB.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1606AF51E87E31F78C3F6BB /* Pods_ATMS_DB.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +51,8 @@
 			children = (
 				1304C62C2AF8D44100043C80 /* ATMS_DB */,
 				1304C62B2AF8D44100043C80 /* Products */,
+				F8E89C3877312A34907FE71F /* Pods */,
+				D0B12D130169D2A48A9FF6F4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,7 +69,8 @@
 			children = (
 				1304C62D2AF8D44100043C80 /* AppDelegate.swift */,
 				1304C62F2AF8D44100043C80 /* SceneDelegate.swift */,
-				1304C6312AF8D44100043C80 /* ViewController.swift */,
+				1304C6492AF8FE9700043C80 /* viewControllers */,
+				1304C64A2AF8FEAE00043C80 /* Models */,
 				1304C6332AF8D44100043C80 /* Main.storyboard */,
 				1304C6392AF8D44300043C80 /* Assets.xcassets */,
 				1304C63B2AF8D44300043C80 /* LaunchScreen.storyboard */,
@@ -70,6 +80,39 @@
 			path = ATMS_DB;
 			sourceTree = "<group>";
 		};
+		1304C6492AF8FE9700043C80 /* viewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				1304C6312AF8D44100043C80 /* HomeVc.swift */,
+				1304C6472AF8FE9200043C80 /* personalInfoVc.swift */,
+			);
+			path = viewControllers;
+			sourceTree = "<group>";
+		};
+		1304C64A2AF8FEAE00043C80 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D0B12D130169D2A48A9FF6F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				19E0D3C1CD5330C801674065 /* Pods_ATMS_DB.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F8E89C3877312A34907FE71F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F4A8B83EC734566D835D04F4 /* Pods-ATMS_DB.debug.xcconfig */,
+				A2F2016AF4771B181D630C12 /* Pods-ATMS_DB.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +120,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1304C6412AF8D44300043C80 /* Build configuration list for PBXNativeTarget "ATMS_DB" */;
 			buildPhases = (
+				CCA3C458AE5C59D788EAAD9D /* [CP] Check Pods Manifest.lock */,
 				1304C6262AF8D44000043C80 /* Sources */,
 				1304C6272AF8D44000043C80 /* Frameworks */,
 				1304C6282AF8D44000043C80 /* Resources */,
+				9D52FB24BC717CC9D77FA617 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -136,12 +181,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9D52FB24BC717CC9D77FA617 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ATMS_DB/Pods-ATMS_DB-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ATMS_DB/Pods-ATMS_DB-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ATMS_DB/Pods-ATMS_DB-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CCA3C458AE5C59D788EAAD9D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ATMS_DB-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1304C6262AF8D44000043C80 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1304C6322AF8D44100043C80 /* ViewController.swift in Sources */,
+				1304C6482AF8FE9200043C80 /* personalInfoVc.swift in Sources */,
+				1304C6322AF8D44100043C80 /* HomeVc.swift in Sources */,
 				1304C62E2AF8D44100043C80 /* AppDelegate.swift in Sources */,
 				1304C6382AF8D44100043C80 /* ATMS_DB.xcdatamodeld in Sources */,
 				1304C6302AF8D44100043C80 /* SceneDelegate.swift in Sources */,
@@ -220,7 +308,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -274,7 +362,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -286,6 +374,7 @@
 		};
 		1304C6422AF8D44300043C80 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4A8B83EC734566D835D04F4 /* Pods-ATMS_DB.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -294,11 +383,13 @@
 				DEVELOPMENT_TEAM = 4AKF2AAB68;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ATMS_DB/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -314,6 +405,7 @@
 		};
 		1304C6432AF8D44300043C80 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2F2016AF4771B181D630C12 /* Pods-ATMS_DB.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -322,11 +414,13 @@
 				DEVELOPMENT_TEAM = 4AKF2AAB68;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ATMS_DB/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
