@@ -16,6 +16,8 @@
 		1304C63D2AF8D44300043C80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1304C63B2AF8D44300043C80 /* LaunchScreen.storyboard */; };
 		1304C6482AF8FE9200043C80 /* personalInfoVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1304C6472AF8FE9200043C80 /* personalInfoVc.swift */; };
 		1365E82A2B0249BE00F2D76A /* FlightInformationVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1365E8292B0249BE00F2D76A /* FlightInformationVc.swift */; };
+		139EA5E72B03CDAD009CE4C5 /* historyVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139EA5E62B03CDAD009CE4C5 /* historyVc.swift */; };
+		13B6BA132B287265004FF5DE /* profileTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B6BA122B287265004FF5DE /* profileTableVC.swift */; };
 		A1606AF51E87E31F78C3F6BB /* Pods_ATMS_DB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19E0D3C1CD5330C801674065 /* Pods_ATMS_DB.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +33,8 @@
 		1304C63E2AF8D44300043C80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1304C6472AF8FE9200043C80 /* personalInfoVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = personalInfoVc.swift; sourceTree = "<group>"; };
 		1365E8292B0249BE00F2D76A /* FlightInformationVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightInformationVc.swift; sourceTree = "<group>"; };
+		139EA5E62B03CDAD009CE4C5 /* historyVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = historyVc.swift; sourceTree = "<group>"; };
+		13B6BA122B287265004FF5DE /* profileTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileTableVC.swift; sourceTree = "<group>"; };
 		19E0D3C1CD5330C801674065 /* Pods_ATMS_DB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ATMS_DB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2F2016AF4771B181D630C12 /* Pods-ATMS_DB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ATMS_DB.release.xcconfig"; path = "Target Support Files/Pods-ATMS_DB/Pods-ATMS_DB.release.xcconfig"; sourceTree = "<group>"; };
 		F4A8B83EC734566D835D04F4 /* Pods-ATMS_DB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ATMS_DB.debug.xcconfig"; path = "Target Support Files/Pods-ATMS_DB/Pods-ATMS_DB.debug.xcconfig"; sourceTree = "<group>"; };
@@ -85,9 +89,9 @@
 		1304C6492AF8FE9700043C80 /* viewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				1304C6312AF8D44100043C80 /* HomeVc.swift */,
-				1304C6472AF8FE9200043C80 /* personalInfoVc.swift */,
-				1365E8292B0249BE00F2D76A /* FlightInformationVc.swift */,
+				139EA5E32B03CCAA009CE4C5 /* BuyTicket */,
+				139EA5E42B03CCC4009CE4C5 /* Profile */,
+				139EA5E52B03CCD8009CE4C5 /* History */,
 			);
 			path = viewControllers;
 			sourceTree = "<group>";
@@ -97,6 +101,32 @@
 			children = (
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		139EA5E32B03CCAA009CE4C5 /* BuyTicket */ = {
+			isa = PBXGroup;
+			children = (
+				1304C6312AF8D44100043C80 /* HomeVc.swift */,
+				1304C6472AF8FE9200043C80 /* personalInfoVc.swift */,
+				1365E8292B0249BE00F2D76A /* FlightInformationVc.swift */,
+			);
+			path = BuyTicket;
+			sourceTree = "<group>";
+		};
+		139EA5E42B03CCC4009CE4C5 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				13B6BA122B287265004FF5DE /* profileTableVC.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		139EA5E52B03CCD8009CE4C5 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				139EA5E62B03CDAD009CE4C5 /* historyVc.swift */,
+			);
+			path = History;
 			sourceTree = "<group>";
 		};
 		D0B12D130169D2A48A9FF6F4 /* Frameworks */ = {
@@ -232,8 +262,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1304C6482AF8FE9200043C80 /* personalInfoVc.swift in Sources */,
+				13B6BA132B287265004FF5DE /* profileTableVC.swift in Sources */,
 				1365E82A2B0249BE00F2D76A /* FlightInformationVc.swift in Sources */,
 				1304C6322AF8D44100043C80 /* HomeVc.swift in Sources */,
+				139EA5E72B03CDAD009CE4C5 /* historyVc.swift in Sources */,
 				1304C62E2AF8D44100043C80 /* AppDelegate.swift in Sources */,
 				1304C6382AF8D44100043C80 /* ATMS_DB.xcdatamodeld in Sources */,
 				1304C6302AF8D44100043C80 /* SceneDelegate.swift in Sources */,
