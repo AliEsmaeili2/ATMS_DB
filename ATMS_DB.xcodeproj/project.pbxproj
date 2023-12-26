@@ -18,6 +18,8 @@
 		1365E82A2B0249BE00F2D76A /* FlightInformationVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1365E8292B0249BE00F2D76A /* FlightInformationVc.swift */; };
 		139EA5E72B03CDAD009CE4C5 /* historyVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139EA5E62B03CDAD009CE4C5 /* historyVc.swift */; };
 		13B6BA132B287265004FF5DE /* profileTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B6BA122B287265004FF5DE /* profileTableVC.swift */; };
+		13E1588D2B360CDF002ED612 /* FlightTicketVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E1588C2B360CDF002ED612 /* FlightTicketVc.swift */; };
+		13E1588F2B360D23002ED612 /* YourTicketVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E1588E2B360D23002ED612 /* YourTicketVc.swift */; };
 		A1606AF51E87E31F78C3F6BB /* Pods_ATMS_DB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19E0D3C1CD5330C801674065 /* Pods_ATMS_DB.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +37,8 @@
 		1365E8292B0249BE00F2D76A /* FlightInformationVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightInformationVc.swift; sourceTree = "<group>"; };
 		139EA5E62B03CDAD009CE4C5 /* historyVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = historyVc.swift; sourceTree = "<group>"; };
 		13B6BA122B287265004FF5DE /* profileTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileTableVC.swift; sourceTree = "<group>"; };
+		13E1588C2B360CDF002ED612 /* FlightTicketVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightTicketVc.swift; sourceTree = "<group>"; };
+		13E1588E2B360D23002ED612 /* YourTicketVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourTicketVc.swift; sourceTree = "<group>"; };
 		19E0D3C1CD5330C801674065 /* Pods_ATMS_DB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ATMS_DB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2F2016AF4771B181D630C12 /* Pods-ATMS_DB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ATMS_DB.release.xcconfig"; path = "Target Support Files/Pods-ATMS_DB/Pods-ATMS_DB.release.xcconfig"; sourceTree = "<group>"; };
 		F4A8B83EC734566D835D04F4 /* Pods-ATMS_DB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ATMS_DB.debug.xcconfig"; path = "Target Support Files/Pods-ATMS_DB/Pods-ATMS_DB.debug.xcconfig"; sourceTree = "<group>"; };
@@ -109,6 +113,8 @@
 				1304C6312AF8D44100043C80 /* HomeVc.swift */,
 				1304C6472AF8FE9200043C80 /* personalInfoVc.swift */,
 				1365E8292B0249BE00F2D76A /* FlightInformationVc.swift */,
+				13E1588C2B360CDF002ED612 /* FlightTicketVc.swift */,
+				13E1588E2B360D23002ED612 /* YourTicketVc.swift */,
 			);
 			path = BuyTicket;
 			sourceTree = "<group>";
@@ -263,6 +269,8 @@
 			files = (
 				1304C6482AF8FE9200043C80 /* personalInfoVc.swift in Sources */,
 				13B6BA132B287265004FF5DE /* profileTableVC.swift in Sources */,
+				13E1588D2B360CDF002ED612 /* FlightTicketVc.swift in Sources */,
+				13E1588F2B360D23002ED612 /* YourTicketVc.swift in Sources */,
 				1365E82A2B0249BE00F2D76A /* FlightInformationVc.swift in Sources */,
 				1304C6322AF8D44100043C80 /* HomeVc.swift in Sources */,
 				139EA5E72B03CDAD009CE4C5 /* historyVc.swift in Sources */,
@@ -423,8 +431,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -454,8 +461,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
