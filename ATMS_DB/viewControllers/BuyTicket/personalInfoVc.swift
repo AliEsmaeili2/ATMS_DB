@@ -26,6 +26,7 @@ class personalInfoVc: UIViewController {
         super.viewDidLoad()
         
         DDLabel.text = " Select Gender 🔽"
+        DDView.layer.cornerRadius = 8
         
         // UIView or UIBarButtonItem
         dropDown.anchorView = DDView
