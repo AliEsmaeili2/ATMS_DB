@@ -314,6 +314,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
+                                    <action selector="saveButtonTapped:" destination="Ly4-Rl-rXL" eventType="touchUpInside" id="2a8-1c-9Uf"/>
                                     <segue destination="iza-eG-e9I" kind="show" id="w7H-KR-sZh"/>
                                 </connections>
                             </button>
@@ -659,7 +660,7 @@
         <!--FLIGHT TICKET-->
         <scene sceneID="55D-qu-65O">
             <objects>
-                <viewController id="2mw-1n-efM" customClass="FlightTicketVc" customModule="ATMS_DB" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FlightTicketSegue" useStoryboardIdentifierAsRestorationIdentifier="YES" id="2mw-1n-efM" customClass="FlightTicketVc" customModule="ATMS_DB" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XLH-1n-CKn">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -893,7 +894,7 @@
         <!--YOUR TICKET-->
         <scene sceneID="WJe-uu-Fcd">
             <objects>
-                <viewController id="qOy-OL-70l" sceneMemberID="viewController">
+                <viewController id="qOy-OL-70l" customClass="YourTicketVc" customModule="ATMS_DB" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MrB-R3-kJF">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -913,6 +914,9 @@
                                         <real key="value" value="8"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="Okbutton:" destination="qOy-OL-70l" eventType="touchUpInside" id="vQT-4i-A05"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6mW-MD-vTM" userLabel="mainView">
                                 <rect key="frame" x="5" y="167" width="383" height="280"/>
@@ -1529,6 +1533,19 @@
                     <navigationItem key="navigationItem" title="YOUR TICKET" prompt=" " id="A7k-FU-qfr">
                         <barButtonItem key="backBarButtonItem" title=" " id="gzf-uG-oWu"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="QRCodeLogo" destination="pns-P0-iBJ" id="Qrx-WM-HdJ"/>
+                        <outlet property="boardingTime" destination="tm5-bc-L5i" id="ehR-Lt-Agn"/>
+                        <outlet property="companyLogo" destination="Xm4-bY-1Ul" id="cHD-lM-wj0"/>
+                        <outlet property="destinationCity" destination="nWM-As-2sz" id="Wq2-pU-QjM"/>
+                        <outlet property="flightCode" destination="vcu-R9-mYW" id="UYZ-Eh-8Gl"/>
+                        <outlet property="flightDate" destination="NiG-1R-i6b" id="Pug-9J-bT4"/>
+                        <outlet property="flightGate" destination="hPU-ij-HJO" id="yZ5-7j-uW8"/>
+                        <outlet property="fullName" destination="3SP-g9-O3c" id="pCI-MC-FSa"/>
+                        <outlet property="originCity" destination="6TL-bR-dbb" id="YRh-fO-PYx"/>
+                        <outlet property="seatNum" destination="gPe-Gf-JCN" id="kV5-dE-D8l"/>
+                        <outlet property="ticketType" destination="oMk-q2-4Fm" id="o1Z-Ml-xfr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WBp-LA-4UA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
