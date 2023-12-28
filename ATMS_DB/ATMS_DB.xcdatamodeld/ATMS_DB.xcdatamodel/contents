@@ -24,8 +24,10 @@
         <attribute name="gender" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
         <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="namePDF" optional="YES" attributeType="String"/>
         <attribute name="phoneNumber" optional="YES" attributeType="String"/>
         <attribute name="type" optional="YES" attributeType="String"/>
+        <attribute name="urlName" optional="YES" attributeType="String"/>
     </entity>
     <entity name="Ticket" representedClassName="Ticket" syncable="YES" codeGenerationType="class">
         <attribute name="destination" optional="YES" attributeType="String"/>

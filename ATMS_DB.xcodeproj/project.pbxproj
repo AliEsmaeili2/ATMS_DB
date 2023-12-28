@@ -18,6 +18,8 @@
 		1361BBC32B3D70FE00686AF9 /* FetchExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1361BBC22B3D70FE00686AF9 /* FetchExtension.swift */; };
 		1365E82A2B0249BE00F2D76A /* FlightInformationVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1365E8292B0249BE00F2D76A /* FlightInformationVc.swift */; };
 		139EA5E72B03CDAD009CE4C5 /* historyVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139EA5E62B03CDAD009CE4C5 /* historyVc.swift */; };
+		13B2239E2B3D9CD000BFA991 /* historyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B2239D2B3D9CD000BFA991 /* historyCollectionViewCell.swift */; };
+		13B223A02B3DD93C00BFA991 /* CollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B2239F2B3DD93C00BFA991 /* CollectionViewLayout.swift */; };
 		13B6BA132B287265004FF5DE /* profileTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B6BA122B287265004FF5DE /* profileTableVC.swift */; };
 		13E1588D2B360CDF002ED612 /* FlightTicketVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E1588C2B360CDF002ED612 /* FlightTicketVc.swift */; };
 		13E1588F2B360D23002ED612 /* YourTicketVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E1588E2B360D23002ED612 /* YourTicketVc.swift */; };
@@ -35,9 +37,12 @@
 		1304C63C2AF8D44300043C80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1304C63E2AF8D44300043C80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1304C6472AF8FE9200043C80 /* personalInfoVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = personalInfoVc.swift; sourceTree = "<group>"; };
+		1326EB0F2B3D958A00EB22FC /* ATMS_DB2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ATMS_DB2.xcdatamodel; sourceTree = "<group>"; };
 		1361BBC22B3D70FE00686AF9 /* FetchExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchExtension.swift; sourceTree = "<group>"; };
 		1365E8292B0249BE00F2D76A /* FlightInformationVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightInformationVc.swift; sourceTree = "<group>"; };
 		139EA5E62B03CDAD009CE4C5 /* historyVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = historyVc.swift; sourceTree = "<group>"; };
+		13B2239D2B3D9CD000BFA991 /* historyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = historyCollectionViewCell.swift; sourceTree = "<group>"; };
+		13B2239F2B3DD93C00BFA991 /* CollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewLayout.swift; sourceTree = "<group>"; };
 		13B6BA122B287265004FF5DE /* profileTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileTableVC.swift; sourceTree = "<group>"; };
 		13E1588C2B360CDF002ED612 /* FlightTicketVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightTicketVc.swift; sourceTree = "<group>"; };
 		13E1588E2B360D23002ED612 /* YourTicketVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourTicketVc.swift; sourceTree = "<group>"; };
@@ -105,6 +110,7 @@
 		1304C64A2AF8FEAE00043C80 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				1361BBC22B3D70FE00686AF9 /* FetchExtension.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -117,7 +123,6 @@
 				1365E8292B0249BE00F2D76A /* FlightInformationVc.swift */,
 				13E1588C2B360CDF002ED612 /* FlightTicketVc.swift */,
 				13E1588E2B360D23002ED612 /* YourTicketVc.swift */,
-				1361BBC22B3D70FE00686AF9 /* FetchExtension.swift */,
 			);
 			path = BuyTicket;
 			sourceTree = "<group>";
@@ -134,6 +139,8 @@
 			isa = PBXGroup;
 			children = (
 				139EA5E62B03CDAD009CE4C5 /* historyVc.swift */,
+				13B2239D2B3D9CD000BFA991 /* historyCollectionViewCell.swift */,
+				13B2239F2B3DD93C00BFA991 /* CollectionViewLayout.swift */,
 			);
 			path = History;
 			sourceTree = "<group>";
@@ -279,8 +286,10 @@
 				1304C6322AF8D44100043C80 /* HomeVc.swift in Sources */,
 				139EA5E72B03CDAD009CE4C5 /* historyVc.swift in Sources */,
 				1304C62E2AF8D44100043C80 /* AppDelegate.swift in Sources */,
+				13B223A02B3DD93C00BFA991 /* CollectionViewLayout.swift in Sources */,
 				1304C6382AF8D44100043C80 /* ATMS_DB.xcdatamodeld in Sources */,
 				1304C6302AF8D44100043C80 /* SceneDelegate.swift in Sources */,
+				13B2239E2B3D9CD000BFA991 /* historyCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,6 +516,7 @@
 		1304C6362AF8D44100043C80 /* ATMS_DB.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				1326EB0F2B3D958A00EB22FC /* ATMS_DB2.xcdatamodel */,
 				1304C6372AF8D44100043C80 /* ATMS_DB.xcdatamodel */,
 			);
 			currentVersion = 1304C6372AF8D44100043C80 /* ATMS_DB.xcdatamodel */;
