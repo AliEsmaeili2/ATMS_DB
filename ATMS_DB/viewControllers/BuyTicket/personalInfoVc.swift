@@ -34,7 +34,7 @@ class personalInfoVc: UIViewController {
         }
         managedObjectContext = appDelegate.persistentContainer.viewContext
         
-        // MARK: DD
+        // MARK: DD Gender
         DDLabel.text = " Select Gender 🔽"
         DDView.layer.cornerRadius = 8
         
@@ -70,69 +70,18 @@ class personalInfoVc: UIViewController {
         }
         let customer = Customer(entity: entity, insertInto: managedObjectContext)
         
-        // Set the field values from the UI
         customer.name = fullName.text
         customer.code = nationalCode.text
         customer.phoneNumber = phone.text
         customer.dateOfBirth = BirthDayPicker.date
         customer.gender = (DDLabel.text == " Male")
         
-        // Save the changes to Core Data
         do {
             try managedObjectContext.save()
             print("Customer Data saved successfully in coreData.")
+            
         } catch let error as NSError {
             print("Could not save Customer data in coreData. \(error), \(error.userInfo)")
-        }
-    }
-    
-    //fetchFromCoreData
-    func fetchItemsFromCoreData() {
-        guard let managedObjectContext = managedObjectContext else {
-            return
-        }
-        
-        let fetchRequest: NSFetchRequest<Customer> = Customer.fetchRequest()
-        
-        do {
-            let customers = try managedObjectContext.fetch(fetchRequest)
-            // Process the fetched customers
-            for customer in customers {
-                print("fetch Data: ...")
-                print("Name: \(customer.name ?? "")")
-                print("Code: \(customer.code ?? "")")
-                print("Phone: \(customer.phoneNumber ?? "")")
-                print("Birth Date: \(customer.dateOfBirth ?? Date())")
-                print("Gender: \(customer.gender ? "Male" : "Female")")
-                print("----------")
-            }
-        } catch let error as NSError {
-            print("Could not fetch data. \(error), \(error.userInfo)")
-        }
-    }
-    
-    // deleteFromCoreData
-    func deleteDataFromCoreData() {
-        
-        guard let managedObjectContext = managedObjectContext else {
-            return
-        }
-        
-        let fetchRequest: NSFetchRequest<Customer> = Customer.fetchRequest()
-        
-        do {
-            let customers = try managedObjectContext.fetch(fetchRequest)
-            
-            // Loop through fetched customers and delete them one by one
-            for customer in customers {
-                managedObjectContext.delete(customer)
-            }
-            
-            // Save the changes after deleting
-            try managedObjectContext.save()
-            print("Customer Data deleted successfully from coreData.")
-        } catch let error as NSError {
-            print("Could not delete Customer data from coreData. \(error), \(error.userInfo)")
         }
     }
     
@@ -140,13 +89,10 @@ class personalInfoVc: UIViewController {
     @IBAction func saveButtonTapped(_ sender: Any) {
         
         saveToCoreData()
-        //deleteDataFromCoreData()
-        fetchItemsFromCoreData()
     }
     
     @IBAction func DDButton(_ sender: Any) {
         
         dropDown.show()
     }
-    
 }

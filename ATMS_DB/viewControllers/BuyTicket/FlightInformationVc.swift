@@ -7,6 +7,7 @@
 
 import UIKit
 import DropDown
+import CoreData
 
 class FlightInformationVc: UIViewController {
     
@@ -42,7 +43,7 @@ class FlightInformationVc: UIViewController {
     // MARK: DropDowns
     //dropDown City
     let dropDownCity = DropDown()
-    let cityArray = [" Tehran/Iran", " Dubai/UnitedArabEmirates", "Doha/Qatar", "Frankfurt/Germany", "Moscow/Russia", "Paris/France", "London/England", "NewYork/America", "Ankara/Turkey"]
+    let cityArray = [" Tehran", " Dubai", "Doha", "Frankfurt", "Moscow", "Paris", "London", "NewYork", "Ankara"]
     
     //dropDownAirport
     let dropDownAirport = DropDown()
@@ -84,6 +85,8 @@ class FlightInformationVc: UIViewController {
     //dropDown destinationAirport
     let dropDownDestinationAirport = DropDown()
     var destinationAirportArray: [String] = []
+    
+    var managedObjectContext: NSManagedObjectContext?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -261,6 +264,7 @@ class FlightInformationVc: UIViewController {
         }
     }
     
+    // MARK: Function
     // Function to update the airport array based on the selected city
     func updateAirportDropDown(index: Int) {
         switch index {
@@ -360,4 +364,90 @@ class FlightInformationVc: UIViewController {
         dropDownDestinationAirport.show()
     }
     
+    @IBAction func saveButtonTapped(_ sender: Any) {
+        
+        saveAirportToCoreData()
+        //  fetchAirportFromCoreData()
+        saveAirplaneToCoreData()
+        //  fetchAirplaneFromCoreData()
+        saveTravelToCoreData()
+        //  fetchTravelFromCoreData()
+    }
+}
+
+// MARK: extension
+extension FlightInformationVc {
+    
+    //save data's to CoreData
+    func saveAirportToCoreData() {
+        
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+            return
+        }
+        
+        let managedObjectContext = appDelegate.persistentContainer.viewContext
+        
+        let airportEntity = NSEntityDescription.entity(forEntityName: "Airport", in: managedObjectContext)!
+        
+        let airport = NSManagedObject(entity: airportEntity, insertInto: managedObjectContext)
+        
+        airport.setValue(DDLabelAirport.text, forKeyPath: "place")
+        airport.setValue(DDLabelCity.text, forKeyPath: "name")
+        
+        do {
+            try managedObjectContext.save()
+            print("Airport saved to Core Data")
+            
+        } catch let error as NSError {
+            print("Could not save Airport to Core Data. \(error), \(error.userInfo)")
+        }
+    }
+    
+    func saveAirplaneToCoreData() {
+        
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+            return
+        }
+        
+        let managedObjectContext = appDelegate.persistentContainer.viewContext
+        
+        let AirplaneEntity = NSEntityDescription.entity(forEntityName: "Airplane", in: managedObjectContext)!
+        
+        let airplane = NSManagedObject(entity: AirplaneEntity, insertInto: managedObjectContext)
+        
+        airplane.setValue(DDLabelAirplane.text, forKeyPath: "name")
+        airplane.setValue(DDLabelAirPlaneType.text, forKeyPath: "type")
+        
+        do {
+            try managedObjectContext.save()
+            print("Airplane saved to Core Data")
+            
+        } catch let error as NSError {
+            print("Could not save airplane to Core Data. \(error), \(error.userInfo)")
+        }
+    }
+    
+    func saveTravelToCoreData() {
+        
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+            return
+        }
+        
+        let managedObjectContext = appDelegate.persistentContainer.viewContext
+        
+        let TravelEntity = NSEntityDescription.entity(forEntityName: "Travel", in: managedObjectContext)!
+        
+        let travel = NSManagedObject(entity: TravelEntity, insertInto: managedObjectContext)
+        
+        travel.setValue(DDLabelTravel.text, forKeyPath: "name")
+        travel.setValue(DDLabelDestinationAirport.text, forKeyPath: "type")
+        
+        do {
+            try managedObjectContext.save()
+            print("Travel saved to Core Data")
+            
+        } catch let error as NSError {
+            print("Could not save Travel to Core Data. \(error), \(error.userInfo)")
+        }
+    }
 }

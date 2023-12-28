@@ -384,6 +384,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
+                                    <action selector="saveButtonTapped:" destination="iza-eG-e9I" eventType="touchUpInside" id="Xkw-U5-5u1"/>
                                     <segue destination="2mw-1n-efM" kind="show" id="83G-ku-WzP"/>
                                 </connections>
                             </button>
@@ -939,8 +940,8 @@
                                                 <color key="textColor" systemColor="systemRedColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="AIRLINE" translatesAutoresizingMaskIntoConstraints="NO" id="Xm4-bY-1Ul" userLabel="Image logo">
-                                                <rect key="frame" x="170" y="5" width="78" height="50"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="EmiratesRed" translatesAutoresizingMaskIntoConstraints="NO" id="Xm4-bY-1Ul" userLabel="Image logo">
+                                                <rect key="frame" x="170" y="0.0" width="78" height="60"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="///" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fHK-S1-H2c">
                                                 <rect key="frame" x="0.0" y="5" width="20" height="21.666666666666668"/>
@@ -963,20 +964,20 @@
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemGray6Color"/>
                                         <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="Xm4-bY-1Ul" secondAttribute="bottom" id="5cK-4c-6Cm"/>
                                             <constraint firstItem="Tzk-EC-78E" firstAttribute="leading" secondItem="LDt-uU-WKO" secondAttribute="leading" id="6QE-Qc-Bda"/>
                                             <constraint firstItem="Xm4-bY-1Ul" firstAttribute="leading" secondItem="NsI-Ie-pYd" secondAttribute="trailing" constant="5" id="Cjf-TB-kiX"/>
                                             <constraint firstAttribute="height" constant="60" id="ILI-XJ-JY6"/>
                                             <constraint firstAttribute="bottom" secondItem="NsI-Ie-pYd" secondAttribute="bottom" id="Mrl-ug-LqX"/>
                                             <constraint firstItem="Pof-xQ-Jc8" firstAttribute="leading" secondItem="LDt-uU-WKO" secondAttribute="leading" constant="25" id="Nvj-Rs-fo0"/>
                                             <constraint firstItem="fHK-S1-H2c" firstAttribute="top" secondItem="LDt-uU-WKO" secondAttribute="top" constant="5" id="Oe9-f8-aI3"/>
-                                            <constraint firstItem="Xm4-bY-1Ul" firstAttribute="top" secondItem="LDt-uU-WKO" secondAttribute="top" constant="5" id="UfQ-gs-F5K"/>
+                                            <constraint firstItem="Xm4-bY-1Ul" firstAttribute="top" secondItem="LDt-uU-WKO" secondAttribute="top" id="UfQ-gs-F5K"/>
                                             <constraint firstItem="NsI-Ie-pYd" firstAttribute="leading" secondItem="LDt-uU-WKO" secondAttribute="leading" constant="20" id="bhi-XG-SEQ"/>
                                             <constraint firstItem="Tzk-EC-78E" firstAttribute="top" secondItem="fHK-S1-H2c" secondAttribute="bottom" constant="12" id="bwq-Se-rye"/>
                                             <constraint firstAttribute="trailing" secondItem="Xm4-bY-1Ul" secondAttribute="trailing" constant="5" id="dIX-Di-DfA"/>
                                             <constraint firstItem="fHK-S1-H2c" firstAttribute="leading" secondItem="LDt-uU-WKO" secondAttribute="leading" id="ohr-R6-WrD"/>
                                             <constraint firstAttribute="bottom" secondItem="Pof-xQ-Jc8" secondAttribute="bottom" constant="8" id="r11-w3-i6B"/>
                                             <constraint firstItem="Pof-xQ-Jc8" firstAttribute="top" secondItem="LDt-uU-WKO" secondAttribute="top" constant="30" id="sA4-2Q-tVU"/>
-                                            <constraint firstAttribute="bottom" secondItem="Xm4-bY-1Ul" secondAttribute="bottom" constant="5" id="zg0-6y-LGB"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lVu-7z-UGL" userLabel="boarding view">
@@ -1205,8 +1206,8 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fgX-j7-tAR">
                                         <rect key="frame" x="20" y="260" width="363" height="20"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="www.Emirates.com" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ZN-as-uVR">
-                                                <rect key="frame" x="281" y="7" width="77" height="10"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="www.emirates.com" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ZN-as-uVR">
+                                                <rect key="frame" x="282.33333333333331" y="7" width="75.666666666666686" height="10"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="10" id="tKP-Zs-rv5"/>
                                                 </constraints>
@@ -1279,8 +1280,8 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qrcode.viewfinder" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="pns-P0-iBJ" userLabel="QRcode">
-                                        <rect key="frame" x="183" y="76.333333333333329" width="60" height="57.999999999999986"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="QRcode" translatesAutoresizingMaskIntoConstraints="NO" id="pns-P0-iBJ" userLabel="QRcode">
+                                        <rect key="frame" x="183" y="75" width="60" height="60"/>
                                         <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="60" id="YGO-Wo-pID"/>
@@ -1339,7 +1340,7 @@
                                             <constraint firstAttribute="width" constant="104" id="b4V-Wj-10N"/>
                                             <constraint firstAttribute="height" constant="20" id="biO-IT-v0c"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="23"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -2041,7 +2042,8 @@
         </designable>
     </designables>
     <resources>
-        <image name="AIRLINE" width="1024" height="1024"/>
+        <image name="EmiratesRed" width="2800" height="1750"/>
+        <image name="QRcode" width="336" height="336"/>
         <image name="about us" width="24" height="24"/>
         <image name="air2" width="1027" height="270"/>
         <image name="airplane" catalog="system" width="128" height="115"/>
@@ -2054,7 +2056,6 @@
         <image name="notification" width="24" height="24"/>
         <image name="person" catalog="system" width="128" height="121"/>
         <image name="privacy policy" width="24" height="24"/>
-        <image name="qrcode.viewfinder" catalog="system" width="128" height="115"/>
         <image name="rate good" width="24" height="24"/>
         <image name="share" width="24" height="24"/>
         <image name="terms of service" width="24" height="24"/>
