@@ -1,0 +1,70 @@
+PODS:
+  - DropDown (2.3.13)
+  - DynamicBlurView (4.1.0)
+  - DZNEmptyDataSet (1.8.1)
+  - IQKeyboardManagerSwift (6.3.0)
+  - PopupDialog (1.1.1):
+    - DynamicBlurView (~> 4.0)
+  - SkyFloatingLabelTextField (4.0.0)
+  - SwifterSwift (5.2.0):
+    - SwifterSwift/AppKit (= 5.2.0)
+    - SwifterSwift/CoreAnimation (= 5.2.0)
+    - SwifterSwift/CoreGraphics (= 5.2.0)
+    - SwifterSwift/CoreLocation (= 5.2.0)
+    - SwifterSwift/Dispatch (= 5.2.0)
+    - SwifterSwift/Foundation (= 5.2.0)
+    - SwifterSwift/MapKit (= 5.2.0)
+    - SwifterSwift/SceneKit (= 5.2.0)
+    - SwifterSwift/SpriteKit (= 5.2.0)
+    - SwifterSwift/StoreKit (= 5.2.0)
+    - SwifterSwift/SwiftStdlib (= 5.2.0)
+    - SwifterSwift/UIKit (= 5.2.0)
+  - SwifterSwift/AppKit (5.2.0)
+  - SwifterSwift/CoreAnimation (5.2.0)
+  - SwifterSwift/CoreGraphics (5.2.0)
+  - SwifterSwift/CoreLocation (5.2.0)
+  - SwifterSwift/Dispatch (5.2.0)
+  - SwifterSwift/Foundation (5.2.0)
+  - SwifterSwift/MapKit (5.2.0)
+  - SwifterSwift/SceneKit (5.2.0)
+  - SwifterSwift/SpriteKit (5.2.0)
+  - SwifterSwift/StoreKit (5.2.0)
+  - SwifterSwift/SwiftStdlib (5.2.0)
+  - SwifterSwift/UIKit (5.2.0)
+  - SwiftMessages (9.0.6):
+    - SwiftMessages/App (= 9.0.6)
+  - SwiftMessages/App (9.0.6)
+
+DEPENDENCIES:
+  - DropDown
+  - DZNEmptyDataSet
+  - IQKeyboardManagerSwift (= 6.3.0)
+  - PopupDialog
+  - SkyFloatingLabelTextField
+  - SwifterSwift
+  - SwiftMessages
+
+SPEC REPOS:
+  trunk:
+    - DropDown
+    - DynamicBlurView
+    - DZNEmptyDataSet
+    - IQKeyboardManagerSwift
+    - PopupDialog
+    - SkyFloatingLabelTextField
+    - SwifterSwift
+    - SwiftMessages
+
+SPEC CHECKSUMS:
+  DropDown: 8a2116376c1981888557f72ec2ffc9a5e0e456ec
+  DynamicBlurView: 58e18fae80bb614e34681a4486870e7d257b62e8
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  IQKeyboardManagerSwift: a8228c257614af98743b4cd8584637025f36358f
+  PopupDialog: 720c92befd8bc23c13442254945213db5612f149
+  SkyFloatingLabelTextField: 79ddc40e4ad59707fedbb48d605417aee48bb78a
+  SwifterSwift: 334181863c416882d97b7a60c05054d9e4d799e2
+  SwiftMessages: f0c7ef4705a570ad6c5e208b611f4333e660ed92
+
+PODFILE CHECKSUM: 90ba14dc00f5e1faca34e4288cd04d33022ba9b2
+
+COCOAPODS: 1.13.0
