@@ -110,6 +110,7 @@
 		1304C64A2AF8FEAE00043C80 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				13B2239F2B3DD93C00BFA991 /* CollectionViewLayout.swift */,
 				1361BBC22B3D70FE00686AF9 /* FetchExtension.swift */,
 			);
 			path = Models;
@@ -140,7 +141,6 @@
 			children = (
 				139EA5E62B03CDAD009CE4C5 /* historyVc.swift */,
 				13B2239D2B3D9CD000BFA991 /* historyCollectionViewCell.swift */,
-				13B2239F2B3DD93C00BFA991 /* CollectionViewLayout.swift */,
 			);
 			path = History;
 			sourceTree = "<group>";

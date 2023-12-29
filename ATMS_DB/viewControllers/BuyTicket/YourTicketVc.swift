@@ -32,6 +32,13 @@ class YourTicketVc: UIViewController {
     
     //boarding pass
     @IBOutlet weak var ticketType: UILabel!
+    @IBOutlet weak var fullNamePass: UILabel!
+    @IBOutlet weak var Phone: UILabel!
+    @IBOutlet weak var genderPass: UILabel!
+    @IBOutlet weak var birth_Day: UILabel!
+    @IBOutlet weak var airplaneName: UILabel!
+    @IBOutlet weak var airplane_type: UILabel!
+    @IBOutlet weak var ticket_price: UILabel!
     
     //variable
     
@@ -49,6 +56,7 @@ class YourTicketVc: UIViewController {
         fetchOrgAirDataFromCoreData()
         fetchDesAirDataFromCoreData()
         fetchTicketDataFromCoreData()
+        fetchAirplaneDataFromCoreData()
         
         self.flightCode.text = generateRandomCode(from: flightCodeArray)
         self.flightGate.text = generateRandomCode(from: gateArray)
@@ -81,6 +89,10 @@ class YourTicketVc: UIViewController {
             if let customer = customers.last {
                 
                 fullName.text = customer.name
+                fullNamePass.text = customer.name
+                Phone.text = customer.phoneNumber
+                genderPass.text = customer.gender ? "Male" : "Female"
+                
             }
         } catch let error as NSError {
             print("Could not fetch data. \(error), \(error.userInfo)")
@@ -127,6 +139,29 @@ class YourTicketVc: UIViewController {
         }
     }
     
+    func fetchAirplaneDataFromCoreData() {
+        
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+            return
+        }
+        let managedObjectContext = appDelegate.persistentContainer.viewContext
+        
+        let fetchRequest: NSFetchRequest<Airplane> = Airplane.fetchRequest()
+        
+        do {
+            let customers = try managedObjectContext.fetch(fetchRequest)
+            
+            if let customer = customers.last {
+                
+                airplaneName.text = customer.name
+                airplane_type.text = customer.type
+            }
+            
+        } catch let error as NSError {
+            print("Could not fetch data. \(error), \(error.userInfo)")
+        }
+    }
+    
     func fetchTicketDataFromCoreData() {
         
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
@@ -158,6 +193,10 @@ class YourTicketVc: UIViewController {
                 if let seatNumber = ticket.seatNumber as Int16? {
                     self.seatNum.text = String(seatNumber)
                 }
+
+                self.ticketType.text = ticket.type
+                self.ticket_price.text = ticket.price
+                
             }
         } catch let error as NSError {
             print("Could not fetch data. \(error), \(error.userInfo)")
@@ -210,7 +249,7 @@ extension YourTicketVc {
             
             if let pdfName = alertController.textFields?.first?.text, !pdfName.isEmpty {
                 // Define A4 paper size
-                let pageSize = CGSize(width: 600, height: 875) // A4 in points (72 points per inch)
+                let pageSize = CGSize(width: 610, height: 470)
                 
                 // Create a PDF context with the defined page size
                 let pdfData = NSMutableData()

@@ -43,7 +43,7 @@ class FlightInformationVc: UIViewController {
     // MARK: DropDowns
     //dropDown City
     let dropDownCity = DropDown()
-    let cityArray = [" Tehran", " Dubai", "Doha", "Frankfurt", "Moscow", "Paris", "London", "NewYork", "Ankara"]
+    let cityArray = [" Tehran", " Dubai", " Doha", " Frankfurt", " Moscow", " Paris", " London", " NewYork", " Ankara"]
     
     //dropDownAirport
     let dropDownAirport = DropDown()
@@ -101,6 +101,8 @@ class FlightInformationVc: UIViewController {
         DDVAirplane.layer.cornerRadius = 8
         DDTravelType.layer.cornerRadius = 8
         DDTravel.layer.cornerRadius = 8
+        DDcity.layer.cornerRadius = 8
+        DDDestinationAirport.layer.cornerRadius = 8
         
         // MARK: dropDown City
         DDLabelCity.text = " Select City 🔽"
