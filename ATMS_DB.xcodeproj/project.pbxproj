@@ -17,6 +17,7 @@
 		1304C6482AF8FE9200043C80 /* personalInfoVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1304C6472AF8FE9200043C80 /* personalInfoVc.swift */; };
 		130E38E82B40287F0048658C /* verifyEmployeeVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130E38E72B40287F0048658C /* verifyEmployeeVc.swift */; };
 		130E38EA2B402C720048658C /* LoaderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130E38E92B402C720048658C /* LoaderButton.swift */; };
+		134A92A42B40B75100246DDA /* TextFieldCustomize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134A92A32B40B75100246DDA /* TextFieldCustomize.swift */; };
 		1361BBC32B3D70FE00686AF9 /* FetchExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1361BBC22B3D70FE00686AF9 /* FetchExtension.swift */; };
 		1365E82A2B0249BE00F2D76A /* FlightInformationVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1365E8292B0249BE00F2D76A /* FlightInformationVc.swift */; };
 		13819E0E2B3F3E00000B0677 /* EmployeeInfoVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13819E0D2B3F3E00000B0677 /* EmployeeInfoVc.swift */; };
@@ -43,6 +44,7 @@
 		130E38E72B40287F0048658C /* verifyEmployeeVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = verifyEmployeeVc.swift; sourceTree = "<group>"; };
 		130E38E92B402C720048658C /* LoaderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderButton.swift; sourceTree = "<group>"; };
 		1326EB0F2B3D958A00EB22FC /* ATMS_DB2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ATMS_DB2.xcdatamodel; sourceTree = "<group>"; };
+		134A92A32B40B75100246DDA /* TextFieldCustomize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldCustomize.swift; sourceTree = "<group>"; };
 		1361BBC22B3D70FE00686AF9 /* FetchExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchExtension.swift; sourceTree = "<group>"; };
 		1365E8292B0249BE00F2D76A /* FlightInformationVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightInformationVc.swift; sourceTree = "<group>"; };
 		13819E0D2B3F3E00000B0677 /* EmployeeInfoVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeInfoVc.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 				13B2239F2B3DD93C00BFA991 /* CollectionViewLayout.swift */,
 				1361BBC22B3D70FE00686AF9 /* FetchExtension.swift */,
 				130E38E92B402C720048658C /* LoaderButton.swift */,
+				134A92A32B40B75100246DDA /* TextFieldCustomize.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 				13E1588F2B360D23002ED612 /* YourTicketVc.swift in Sources */,
 				1365E82A2B0249BE00F2D76A /* FlightInformationVc.swift in Sources */,
 				1361BBC32B3D70FE00686AF9 /* FetchExtension.swift in Sources */,
+				134A92A42B40B75100246DDA /* TextFieldCustomize.swift in Sources */,
 				1304C6322AF8D44100043C80 /* HomeVc.swift in Sources */,
 				130E38E82B40287F0048658C /* verifyEmployeeVc.swift in Sources */,
 				139EA5E72B03CDAD009CE4C5 /* historyVc.swift in Sources */,
