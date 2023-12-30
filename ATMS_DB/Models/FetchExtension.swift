@@ -206,3 +206,31 @@ extension FlightTicketVc {
         }
     }
 }
+
+extension EmployeeInfoVc {
+    
+    func fetchItemsFromCoreData() {
+        guard let managedObjectContext = managedObjectContext else {
+            return
+        }
+        
+        let fetchRequest: NSFetchRequest<Employee> = Employee.fetchRequest()
+        
+        do {
+            let customers = try managedObjectContext.fetch(fetchRequest)
+            // Process the fetched customers
+            for customer in customers {
+                print("ID: \(customer.id)")
+                print("Name: \(customer.name ?? "")")
+                print("Phone: \(customer.phoneNumber ?? "")")
+                print("Birth Date: \(customer.dateOfBirth ?? Date())")
+                print("Gender: \(customer.gender ? "Male" : "Female")")
+                print("jobType: \(customer.type)")
+
+                print("----------")
+            }
+        } catch let error as NSError {
+            print("Could not fetch data. \(error), \(error.userInfo)")
+        }
+    }
+}
