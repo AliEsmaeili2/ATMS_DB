@@ -235,7 +235,7 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="selectedLineHeight">
                                         <real key="value" value="3"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="4580391111"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value=" ex. 3450394322"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="title" value="National Code"/>
                                     <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
                                         <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -279,7 +279,7 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="selectedLineHeight">
                                         <real key="value" value="3"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="09127734444"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="ex. +1923323332"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="title" value="Phone Number"/>
                                     <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
                                         <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1656,7 +1656,7 @@
             </objects>
             <point key="canvasLocation" x="-1969" y="-13"/>
         </scene>
-        <!--Your Ticket's-->
+        <!--Your Tickets-->
         <scene sceneID="CKw-WS-2nI">
             <objects>
                 <viewController id="roR-Kq-fyk" customClass="historyVc" customModule="ATMS_DB" customModuleProvider="target" sceneMemberID="viewController">
@@ -1665,7 +1665,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="E5L-FE-FY7">
-                                <rect key="frame" x="0.0" y="219" width="393" height="540"/>
+                                <rect key="frame" x="0.0" y="167" width="393" height="592"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewLayout key="collectionViewLayout" id="0oK-3H-zAQ" customClass="CollectionViewLayout" customModule="ATMS_DB" customModuleProvider="target"/>
                                 <cells>
@@ -1689,7 +1689,7 @@
                             <constraint firstItem="lab-4b-Ewc" firstAttribute="trailing" secondItem="E5L-FE-FY7" secondAttribute="trailing" id="m5M-rm-a4f"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Your Ticket's" prompt=" " id="NFU-6k-zcS"/>
+                    <navigationItem key="navigationItem" title="Your Tickets" prompt=" " id="NFU-6k-zcS"/>
                     <connections>
                         <outlet property="collectionView" destination="E5L-FE-FY7" id="OdN-EJ-ZRm"/>
                     </connections>
@@ -2779,8 +2779,8 @@
         <image name="email sign" width="24" height="24"/>
         <image name="insta" width="24" height="24"/>
         <image name="notification" width="24" height="24"/>
-        <image name="person" width="24" height="24"/>
         <image name="person" catalog="system" width="128" height="121"/>
+        <image name="person" width="24" height="24"/>
         <image name="person.badge.shield.checkmark.fill" catalog="system" width="125" height="128"/>
         <image name="privacy policy" width="24" height="24"/>
         <image name="rate good" width="24" height="24"/>
