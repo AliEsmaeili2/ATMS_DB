@@ -27,12 +27,6 @@ class profileTableVC: UITableViewController {
         // #warning Incomplete implementation, return the number of sections
         return 4
     }
-
-  //  override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-   //     return 0
-  //  }
-
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
@@ -90,21 +84,21 @@ class profileTableVC: UITableViewController {
     // MARK: - Functions
     func termOfService() {
         
-        if let url = URL(string: "https://www.apple.com") {
+        if let url = URL(string: "https://www.emirates.com/ir/english/information/terms-and-conditions/") {
             UIApplication.shared.open(url)
         }
     }
     
     func privacyPolicy() {
         
-        if let url = URL(string: "https://www.google.com") {
+        if let url = URL(string: "https://www.emirates.com/ir/english/information/privacy-policy/") {
             UIApplication.shared.open(url)
         }
     }
     
     func aboutUs() {
         
-        if let url = URL(string: "https://www.github.com") {
+        if let url = URL(string: "https://github.com/AliEsmaeili2/ATMS_DB") {
             UIApplication.shared.open(url)
         }
     }
@@ -125,7 +119,7 @@ class profileTableVC: UITableViewController {
     
     func website() {
         
-        if let url = URL(string: "https://air.com") {
+        if let url = URL(string: "https://www.emirates.com") {
             UIApplication.shared.open(url)
         }
     }

@@ -66,7 +66,7 @@ class historyVc: UIViewController {
         view.addSubview(titleLabel)
         
         // Configure description label
-        descriptionLabel.text = "Looks like you haven't bought a Ticket yet. Add a new Ticket to be displayed on this page."
+        descriptionLabel.text = "Looks like you haven't bought a Ticket yet. buy a new Ticket to be displayed on this page."
         descriptionLabel.font = UIFont.systemFont(ofSize: 16)
         descriptionLabel.textAlignment = .center
         descriptionLabel.numberOfLines = 0

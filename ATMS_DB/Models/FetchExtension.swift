@@ -155,7 +155,7 @@ extension FlightTicketVc {
             for ticket in tickets {
                 let seat = ticket.seatNumber
                 let type = ticket.type
-                let price = ticket.price // New field added
+                let price = ticket.price
                 
                 print("Ticket seat: \(seat), type: \(type ?? ""), price: \(price ?? "")")
             }
@@ -174,11 +174,11 @@ extension FlightTicketVc {
         let fetchRequest: NSFetchRequest<Airport> = Airport.fetchRequest()
         
         do {
-            let customers = try managedObjectContext.fetch(fetchRequest)
-            if let customer = customers.last {
+            let OriginCity1 = try managedObjectContext.fetch(fetchRequest)
+            
+            if let OriginCity = OriginCity1.last {
                 
-                origin.text = customer.place
-                // Populate other fields similarly based on your Customer entity
+                origin.text = OriginCity.place
             }
         } catch let error as NSError {
             print("Could not fetch data. \(error), \(error.userInfo)")
@@ -195,11 +195,11 @@ extension FlightTicketVc {
         let fetchRequest: NSFetchRequest<Travel> = Travel.fetchRequest()
         
         do {
-            let customers = try managedObjectContext.fetch(fetchRequest)
-            if let customer = customers.last {
+            let DestinationCity1 = try managedObjectContext.fetch(fetchRequest)
+            
+            if let DestinationCity = DestinationCity1.last {
                 
-                destination.text = customer.type
-                // Populate other fields similarly based on your Customer entity
+                destination.text = DestinationCity.type
             }
         } catch let error as NSError {
             print("Could not fetch data. \(error), \(error.userInfo)")
@@ -207,9 +207,11 @@ extension FlightTicketVc {
     }
 }
 
+// MARK: EmployeeInfo Vc
 extension EmployeeInfoVc {
     
     func fetchItemsFromCoreData() {
+        
         guard let managedObjectContext = managedObjectContext else {
             return
         }
@@ -217,15 +219,14 @@ extension EmployeeInfoVc {
         let fetchRequest: NSFetchRequest<Employee> = Employee.fetchRequest()
         
         do {
-            let customers = try managedObjectContext.fetch(fetchRequest)
-            // Process the fetched customers
-            for customer in customers {
-                print("ID: \(customer.id)")
-                print("Name: \(customer.name ?? "")")
-                print("Phone: \(customer.phoneNumber ?? "")")
-                print("Birth Date: \(customer.dateOfBirth ?? Date())")
-                print("Gender: \(customer.gender ? "Male" : "Female")")
-                print("jobType: \(customer.type)")
+            let employee1 = try managedObjectContext.fetch(fetchRequest)
+            for employee in employee1 {
+                print("ID: \(employee.id)")
+                print("Name: \(employee.name ?? "")")
+                print("Phone: \(employee.phoneNumber ?? "")")
+                print("Birth Date: \(employee.dateOfBirth ?? Date())")
+                print("Gender: \(employee.gender ? "Male" : "Female")")
+                print("jobType: \(employee.type)")
 
                 print("----------")
             }

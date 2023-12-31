@@ -61,7 +61,7 @@ class FlightTicketVc: UIViewController {
         }
         
         // MARK: DDTicketType
-        labelTicketType.text = " Select TicketType 🔽"
+        labelTicketType.text = " Select Ticket Type 🔽"
         
         dropDownTicketType.anchorView = DDTicketType
         dropDownTicketType.dataSource = ticketTypeArray
@@ -121,7 +121,6 @@ class FlightTicketVc: UIViewController {
     @IBAction func saveButton(_ sender: UIButton) {
         
         saveTicketToCoreData()
-        //fetchTicketFromCoreData()
     }
     
     @IBAction func buttonSeatNumber(_ sender: Any) {

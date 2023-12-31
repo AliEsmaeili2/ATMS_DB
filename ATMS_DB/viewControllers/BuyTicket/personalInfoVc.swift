@@ -20,6 +20,7 @@ class personalInfoVc: UIViewController {
     
     @IBOutlet weak var DDView: UIView!
     @IBOutlet weak var DDLabel: UILabel!
+    @IBOutlet weak var saveButton: UIButton!
     
     var managedObjectContext: NSManagedObjectContext?
     let dropDown = DropDown()
@@ -28,6 +29,10 @@ class personalInfoVc: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        fullName.addTarget(self, action: #selector(nameDidChange(_:)), for: .editingChanged)
+        self.view.addSubview(fullName)
+        fullnameTF()
+                
         //coreData
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
             return

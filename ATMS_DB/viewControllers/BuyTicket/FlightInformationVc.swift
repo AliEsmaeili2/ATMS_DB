@@ -105,7 +105,7 @@ class FlightInformationVc: UIViewController {
         DDDestinationAirport.layer.cornerRadius = 8
         
         // MARK: dropDown City
-        DDLabelCity.text = " Select City 🔽"
+        DDLabelCity.text = " Select Departure City 🔽"
         
         dropDownCity.anchorView = DDcity
         dropDownCity.dataSource = cityArray
@@ -118,11 +118,11 @@ class FlightInformationVc: UIViewController {
             self.DDLabelCity.text = cityArray[index]
             
             self.updateAirportDropDown(index: index)
-            DDLabelAirport.text = " Select Airport 🔽"
+            DDLabelAirport.text = " Select Departure Airport 🔽"
         }
         
         // MARK: dropDownAirport
-        DDLabelAirport.text = " Select Airport 🔽"
+        DDLabelAirport.text = " Select Departure Airport 🔽"
         
         dropDownAirport.anchorView = DDAirport
         dropDownAirport.dataSource = []
@@ -152,11 +152,11 @@ class FlightInformationVc: UIViewController {
             }
             
             self.dropDownAirplane.dataSource = self.airplaneArray
-            self.DDLabelAirplane.text = " Select Airplane 🔽"
+            self.DDLabelAirplane.text = " Select Airplane Model 🔽"
         }
         
         // MARK: dropDownAirplane
-        DDLabelAirplane.text = " Select Airplane 🔽"
+        DDLabelAirplane.text = " Select Airplane Model 🔽"
         
         dropDownAirplane.anchorView = DDVAirplane
         dropDownAirplane.dataSource = airplaneArray
@@ -247,11 +247,11 @@ class FlightInformationVc: UIViewController {
             }
             
             self.dropDownDestinationAirport.dataSource = self.destinationAirportArray
-            DDLabelDestinationAirport.text = " Select Destination Airport 🔽"
+            DDLabelDestinationAirport.text = " Select Arrival Airport 🔽"
         }
         
         // MARK: dropDown DestinationAirport
-        DDLabelDestinationAirport.text = " Select Destination Airport 🔽"
+        DDLabelDestinationAirport.text = " Select Arrival Airport 🔽"
         
         dropDownDestinationAirport.anchorView = DDDestinationAirport
         dropDownDestinationAirport.dataSource = destinationAirportArray

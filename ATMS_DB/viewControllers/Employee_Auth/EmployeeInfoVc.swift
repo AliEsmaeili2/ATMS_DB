@@ -59,6 +59,13 @@ class EmployeeInfoVc: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        fullName.addTarget(self, action: #selector(nameDidChange(_:)), for: .editingChanged)
+        self.view.addSubview(fullName)
+        fullnameTF()
+        
+        employeeID.addTarget(self, action: #selector(IDDidChange(_:)), for: .editingChanged)
+        self.view.addSubview(employeeID)
+        
         //coreData
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
             return
@@ -85,7 +92,7 @@ class EmployeeInfoVc: UIViewController {
         DropDown.appearance().cornerRadius = 2
         
         // MARK: DD JobPosition
-        labelJobPosition.text = " Select JobPosition 🔽"
+        labelJobPosition.text = " Select Job Position 🔽"
         DDJobPosition.layer.cornerRadius = 8
         
         dropDownJob.anchorView = DDJobPosition
